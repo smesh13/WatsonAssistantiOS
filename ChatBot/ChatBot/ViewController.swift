@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Chatbot1
+//  ChatBot
 //
-//  Created by Edoardo Smimmo on 06/03/2019.
-//  Copyright © 2019 Lezioni IBM. All rights reserved.
+//  Created by Digital First on 06/03/19.
+//  Copyright © 2019 Digital First. All rights reserved.
 //
 
 import UIKit

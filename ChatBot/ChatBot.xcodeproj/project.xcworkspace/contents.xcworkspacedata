@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Chatbot1.xcodeproj">
+      location = "self:ChatBot.xcodeproj">
    </FileRef>
 </Workspace>
