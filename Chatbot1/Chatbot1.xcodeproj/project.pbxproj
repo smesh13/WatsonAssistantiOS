@@ -7,64 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E3B6FEE22302D4B001AF27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B6FED22302D4B001AF27D /* AppDelegate.swift */; };
-		2E3B6FF022302D4B001AF27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B6FEF22302D4B001AF27D /* ViewController.swift */; };
-		2E3B6FF322302D4B001AF27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B6FF122302D4B001AF27D /* Main.storyboard */; };
-		2E3B6FF522302D4B001AF27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B6FF422302D4B001AF27D /* Assets.xcassets */; };
-		2E3B6FF822302D4B001AF27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B6FF622302D4B001AF27D /* LaunchScreen.storyboard */; };
-		2E3B700322302D4B001AF27D /* ChatBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B700222302D4B001AF27D /* ChatBotTests.swift */; };
-		2E3B700E22302D4B001AF27D /* ChatBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B700D22302D4B001AF27D /* ChatBotUITests.swift */; };
+		83848075223032C800ECA82E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83848074223032C800ECA82E /* AppDelegate.swift */; };
+		83848077223032C800ECA82E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83848076223032C800ECA82E /* ViewController.swift */; };
+		8384807A223032C800ECA82E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83848078223032C800ECA82E /* Main.storyboard */; };
+		8384807C223032C900ECA82E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8384807B223032C900ECA82E /* Assets.xcassets */; };
+		8384807F223032C900ECA82E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8384807D223032C900ECA82E /* LaunchScreen.storyboard */; };
+		8384808A223032CA00ECA82E /* Chatbot1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83848089223032CA00ECA82E /* Chatbot1Tests.swift */; };
+		83848095223032CA00ECA82E /* Chatbot1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83848094223032CA00ECA82E /* Chatbot1UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E3B6FFF22302D4B001AF27D /* PBXContainerItemProxy */ = {
+		83848086223032CA00ECA82E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2E3B6FE222302D4B001AF27D /* Project object */;
+			containerPortal = 83848069223032C800ECA82E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E3B6FE922302D4B001AF27D;
-			remoteInfo = ChatBot;
+			remoteGlobalIDString = 83848070223032C800ECA82E;
+			remoteInfo = Chatbot1;
 		};
-		2E3B700A22302D4B001AF27D /* PBXContainerItemProxy */ = {
+		83848091223032CA00ECA82E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2E3B6FE222302D4B001AF27D /* Project object */;
+			containerPortal = 83848069223032C800ECA82E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E3B6FE922302D4B001AF27D;
-			remoteInfo = ChatBot;
+			remoteGlobalIDString = 83848070223032C800ECA82E;
+			remoteInfo = Chatbot1;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E3B6FEA22302D4B001AF27D /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3B6FED22302D4B001AF27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E3B6FEF22302D4B001AF27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E3B6FF222302D4B001AF27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E3B6FF422302D4B001AF27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E3B6FF722302D4B001AF27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E3B6FF922302D4B001AF27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E3B6FFE22302D4B001AF27D /* ChatBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3B700222302D4B001AF27D /* ChatBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotTests.swift; sourceTree = "<group>"; };
-		2E3B700422302D4B001AF27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E3B700922302D4B001AF27D /* ChatBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3B700D22302D4B001AF27D /* ChatBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotUITests.swift; sourceTree = "<group>"; };
-		2E3B700F22302D4B001AF27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83848071223032C800ECA82E /* Chatbot1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatbot1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83848074223032C800ECA82E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83848076223032C800ECA82E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83848079223032C800ECA82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8384807B223032C900ECA82E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8384807E223032C900ECA82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83848080223032C900ECA82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83848085223032CA00ECA82E /* Chatbot1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chatbot1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83848089223032CA00ECA82E /* Chatbot1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatbot1Tests.swift; sourceTree = "<group>"; };
+		8384808B223032CA00ECA82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83848090223032CA00ECA82E /* Chatbot1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chatbot1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83848094223032CA00ECA82E /* Chatbot1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatbot1UITests.swift; sourceTree = "<group>"; };
+		83848096223032CA00ECA82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E3B6FE722302D4B001AF27D /* Frameworks */ = {
+		8384806E223032C800ECA82E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E3B6FFB22302D4B001AF27D /* Frameworks */ = {
+		83848082223032CA00ECA82E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E3B700622302D4B001AF27D /* Frameworks */ = {
+		8384808D223032CA00ECA82E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,137 +74,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E3B6FE122302D4B001AF27D = {
+		83848068223032C800ECA82E = {
 			isa = PBXGroup;
 			children = (
-				2E3B6FEC22302D4B001AF27D /* ChatBot */,
-				2E3B700122302D4B001AF27D /* ChatBotTests */,
-				2E3B700C22302D4B001AF27D /* ChatBotUITests */,
-				2E3B6FEB22302D4B001AF27D /* Products */,
+				83848073223032C800ECA82E /* Chatbot1 */,
+				83848088223032CA00ECA82E /* Chatbot1Tests */,
+				83848093223032CA00ECA82E /* Chatbot1UITests */,
+				83848072223032C800ECA82E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2E3B6FEB22302D4B001AF27D /* Products */ = {
+		83848072223032C800ECA82E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E3B6FEA22302D4B001AF27D /* ChatBot.app */,
-				2E3B6FFE22302D4B001AF27D /* ChatBotTests.xctest */,
-				2E3B700922302D4B001AF27D /* ChatBotUITests.xctest */,
+				83848071223032C800ECA82E /* Chatbot1.app */,
+				83848085223032CA00ECA82E /* Chatbot1Tests.xctest */,
+				83848090223032CA00ECA82E /* Chatbot1UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E3B6FEC22302D4B001AF27D /* ChatBot */ = {
+		83848073223032C800ECA82E /* Chatbot1 */ = {
 			isa = PBXGroup;
 			children = (
-				2E3B6FED22302D4B001AF27D /* AppDelegate.swift */,
-				2E3B6FEF22302D4B001AF27D /* ViewController.swift */,
-				2E3B6FF122302D4B001AF27D /* Main.storyboard */,
-				2E3B6FF422302D4B001AF27D /* Assets.xcassets */,
-				2E3B6FF622302D4B001AF27D /* LaunchScreen.storyboard */,
-				2E3B6FF922302D4B001AF27D /* Info.plist */,
+				83848074223032C800ECA82E /* AppDelegate.swift */,
+				83848076223032C800ECA82E /* ViewController.swift */,
+				83848078223032C800ECA82E /* Main.storyboard */,
+				8384807B223032C900ECA82E /* Assets.xcassets */,
+				8384807D223032C900ECA82E /* LaunchScreen.storyboard */,
+				83848080223032C900ECA82E /* Info.plist */,
 			);
-			path = ChatBot;
+			path = Chatbot1;
 			sourceTree = "<group>";
 		};
-		2E3B700122302D4B001AF27D /* ChatBotTests */ = {
+		83848088223032CA00ECA82E /* Chatbot1Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2E3B700222302D4B001AF27D /* ChatBotTests.swift */,
-				2E3B700422302D4B001AF27D /* Info.plist */,
+				83848089223032CA00ECA82E /* Chatbot1Tests.swift */,
+				8384808B223032CA00ECA82E /* Info.plist */,
 			);
-			path = ChatBotTests;
+			path = Chatbot1Tests;
 			sourceTree = "<group>";
 		};
-		2E3B700C22302D4B001AF27D /* ChatBotUITests */ = {
+		83848093223032CA00ECA82E /* Chatbot1UITests */ = {
 			isa = PBXGroup;
 			children = (
-				2E3B700D22302D4B001AF27D /* ChatBotUITests.swift */,
-				2E3B700F22302D4B001AF27D /* Info.plist */,
+				83848094223032CA00ECA82E /* Chatbot1UITests.swift */,
+				83848096223032CA00ECA82E /* Info.plist */,
 			);
-			path = ChatBotUITests;
+			path = Chatbot1UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E3B6FE922302D4B001AF27D /* ChatBot */ = {
+		83848070223032C800ECA82E /* Chatbot1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E3B701222302D4C001AF27D /* Build configuration list for PBXNativeTarget "ChatBot" */;
+			buildConfigurationList = 83848099223032CA00ECA82E /* Build configuration list for PBXNativeTarget "Chatbot1" */;
 			buildPhases = (
-				2E3B6FE622302D4B001AF27D /* Sources */,
-				2E3B6FE722302D4B001AF27D /* Frameworks */,
-				2E3B6FE822302D4B001AF27D /* Resources */,
+				8384806D223032C800ECA82E /* Sources */,
+				8384806E223032C800ECA82E /* Frameworks */,
+				8384806F223032C800ECA82E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ChatBot;
-			productName = ChatBot;
-			productReference = 2E3B6FEA22302D4B001AF27D /* ChatBot.app */;
+			name = Chatbot1;
+			productName = Chatbot1;
+			productReference = 83848071223032C800ECA82E /* Chatbot1.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E3B6FFD22302D4B001AF27D /* ChatBotTests */ = {
+		83848084223032CA00ECA82E /* Chatbot1Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E3B701522302D4C001AF27D /* Build configuration list for PBXNativeTarget "ChatBotTests" */;
+			buildConfigurationList = 8384809C223032CA00ECA82E /* Build configuration list for PBXNativeTarget "Chatbot1Tests" */;
 			buildPhases = (
-				2E3B6FFA22302D4B001AF27D /* Sources */,
-				2E3B6FFB22302D4B001AF27D /* Frameworks */,
-				2E3B6FFC22302D4B001AF27D /* Resources */,
+				83848081223032CA00ECA82E /* Sources */,
+				83848082223032CA00ECA82E /* Frameworks */,
+				83848083223032CA00ECA82E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E3B700022302D4B001AF27D /* PBXTargetDependency */,
+				83848087223032CA00ECA82E /* PBXTargetDependency */,
 			);
-			name = ChatBotTests;
-			productName = ChatBotTests;
-			productReference = 2E3B6FFE22302D4B001AF27D /* ChatBotTests.xctest */;
+			name = Chatbot1Tests;
+			productName = Chatbot1Tests;
+			productReference = 83848085223032CA00ECA82E /* Chatbot1Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2E3B700822302D4B001AF27D /* ChatBotUITests */ = {
+		8384808F223032CA00ECA82E /* Chatbot1UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E3B701822302D4C001AF27D /* Build configuration list for PBXNativeTarget "ChatBotUITests" */;
+			buildConfigurationList = 8384809F223032CA00ECA82E /* Build configuration list for PBXNativeTarget "Chatbot1UITests" */;
 			buildPhases = (
-				2E3B700522302D4B001AF27D /* Sources */,
-				2E3B700622302D4B001AF27D /* Frameworks */,
-				2E3B700722302D4B001AF27D /* Resources */,
+				8384808C223032CA00ECA82E /* Sources */,
+				8384808D223032CA00ECA82E /* Frameworks */,
+				8384808E223032CA00ECA82E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E3B700B22302D4B001AF27D /* PBXTargetDependency */,
+				83848092223032CA00ECA82E /* PBXTargetDependency */,
 			);
-			name = ChatBotUITests;
-			productName = ChatBotUITests;
-			productReference = 2E3B700922302D4B001AF27D /* ChatBotUITests.xctest */;
+			name = Chatbot1UITests;
+			productName = Chatbot1UITests;
+			productReference = 83848090223032CA00ECA82E /* Chatbot1UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2E3B6FE222302D4B001AF27D /* Project object */ = {
+		83848069223032C800ECA82E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Digital First";
+				ORGANIZATIONNAME = "Lezioni IBM";
 				TargetAttributes = {
-					2E3B6FE922302D4B001AF27D = {
+					83848070223032C800ECA82E = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					2E3B6FFD22302D4B001AF27D = {
+					83848084223032CA00ECA82E = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 2E3B6FE922302D4B001AF27D;
+						TestTargetID = 83848070223032C800ECA82E;
 					};
-					2E3B700822302D4B001AF27D = {
+					8384808F223032CA00ECA82E = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 2E3B6FE922302D4B001AF27D;
+						TestTargetID = 83848070223032C800ECA82E;
 					};
 				};
 			};
-			buildConfigurationList = 2E3B6FE522302D4B001AF27D /* Build configuration list for PBXProject "ChatBot" */;
+			buildConfigurationList = 8384806C223032C800ECA82E /* Build configuration list for PBXProject "Chatbot1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +212,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 2E3B6FE122302D4B001AF27D;
-			productRefGroup = 2E3B6FEB22302D4B001AF27D /* Products */;
+			mainGroup = 83848068223032C800ECA82E;
+			productRefGroup = 83848072223032C800ECA82E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E3B6FE922302D4B001AF27D /* ChatBot */,
-				2E3B6FFD22302D4B001AF27D /* ChatBotTests */,
-				2E3B700822302D4B001AF27D /* ChatBotUITests */,
+				83848070223032C800ECA82E /* Chatbot1 */,
+				83848084223032CA00ECA82E /* Chatbot1Tests */,
+				8384808F223032CA00ECA82E /* Chatbot1UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E3B6FE822302D4B001AF27D /* Resources */ = {
+		8384806F223032C800ECA82E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3B6FF822302D4B001AF27D /* LaunchScreen.storyboard in Resources */,
-				2E3B6FF522302D4B001AF27D /* Assets.xcassets in Resources */,
-				2E3B6FF322302D4B001AF27D /* Main.storyboard in Resources */,
+				8384807F223032C900ECA82E /* LaunchScreen.storyboard in Resources */,
+				8384807C223032C900ECA82E /* Assets.xcassets in Resources */,
+				8384807A223032C800ECA82E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E3B6FFC22302D4B001AF27D /* Resources */ = {
+		83848083223032CA00ECA82E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E3B700722302D4B001AF27D /* Resources */ = {
+		8384808E223032CA00ECA82E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +252,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E3B6FE622302D4B001AF27D /* Sources */ = {
+		8384806D223032C800ECA82E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3B6FF022302D4B001AF27D /* ViewController.swift in Sources */,
-				2E3B6FEE22302D4B001AF27D /* AppDelegate.swift in Sources */,
+				83848077223032C800ECA82E /* ViewController.swift in Sources */,
+				83848075223032C800ECA82E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E3B6FFA22302D4B001AF27D /* Sources */ = {
+		83848081223032CA00ECA82E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3B700322302D4B001AF27D /* ChatBotTests.swift in Sources */,
+				8384808A223032CA00ECA82E /* Chatbot1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E3B700522302D4B001AF27D /* Sources */ = {
+		8384808C223032CA00ECA82E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3B700E22302D4B001AF27D /* ChatBotUITests.swift in Sources */,
+				83848095223032CA00ECA82E /* Chatbot1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E3B700022302D4B001AF27D /* PBXTargetDependency */ = {
+		83848087223032CA00ECA82E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E3B6FE922302D4B001AF27D /* ChatBot */;
-			targetProxy = 2E3B6FFF22302D4B001AF27D /* PBXContainerItemProxy */;
+			target = 83848070223032C800ECA82E /* Chatbot1 */;
+			targetProxy = 83848086223032CA00ECA82E /* PBXContainerItemProxy */;
 		};
-		2E3B700B22302D4B001AF27D /* PBXTargetDependency */ = {
+		83848092223032CA00ECA82E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E3B6FE922302D4B001AF27D /* ChatBot */;
-			targetProxy = 2E3B700A22302D4B001AF27D /* PBXContainerItemProxy */;
+			target = 83848070223032C800ECA82E /* Chatbot1 */;
+			targetProxy = 83848091223032CA00ECA82E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E3B6FF122302D4B001AF27D /* Main.storyboard */ = {
+		83848078223032C800ECA82E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E3B6FF222302D4B001AF27D /* Base */,
+				83848079223032C800ECA82E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2E3B6FF622302D4B001AF27D /* LaunchScreen.storyboard */ = {
+		8384807D223032C900ECA82E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E3B6FF722302D4B001AF27D /* Base */,
+				8384807E223032C900ECA82E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2E3B701022302D4B001AF27D /* Debug */ = {
+		83848097223032CA00ECA82E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		2E3B701122302D4C001AF27D /* Release */ = {
+		83848098223032CA00ECA82E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,158 +428,164 @@
 			};
 			name = Release;
 		};
-		2E3B701322302D4C001AF27D /* Debug */ = {
+		8384809A223032CA00ECA82E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChatBot/Info.plist;
+				DEVELOPMENT_TEAM = TV9ZJ8XFV9;
+				INFOPLIST_FILE = Chatbot1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-First.ChatBot";
+				PRODUCT_BUNDLE_IDENTIFIER = lezioni.IBM.it.Chatbot1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2E3B701422302D4C001AF27D /* Release */ = {
+		8384809B223032CA00ECA82E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChatBot/Info.plist;
+				DEVELOPMENT_TEAM = TV9ZJ8XFV9;
+				INFOPLIST_FILE = Chatbot1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-First.ChatBot";
+				PRODUCT_BUNDLE_IDENTIFIER = lezioni.IBM.it.Chatbot1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2E3B701622302D4C001AF27D /* Debug */ = {
+		8384809D223032CA00ECA82E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChatBotTests/Info.plist;
+				DEVELOPMENT_TEAM = TV9ZJ8XFV9;
+				INFOPLIST_FILE = Chatbot1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-First.ChatBotTests";
+				PRODUCT_BUNDLE_IDENTIFIER = lezioni.IBM.it.Chatbot1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/ChatBot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatbot1.app/Chatbot1";
 			};
 			name = Debug;
 		};
-		2E3B701722302D4C001AF27D /* Release */ = {
+		8384809E223032CA00ECA82E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChatBotTests/Info.plist;
+				DEVELOPMENT_TEAM = TV9ZJ8XFV9;
+				INFOPLIST_FILE = Chatbot1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-First.ChatBotTests";
+				PRODUCT_BUNDLE_IDENTIFIER = lezioni.IBM.it.Chatbot1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/ChatBot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatbot1.app/Chatbot1";
 			};
 			name = Release;
 		};
-		2E3B701922302D4C001AF27D /* Debug */ = {
+		838480A0223032CA00ECA82E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChatBotUITests/Info.plist;
+				DEVELOPMENT_TEAM = TV9ZJ8XFV9;
+				INFOPLIST_FILE = Chatbot1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-First.ChatBotUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = lezioni.IBM.it.Chatbot1UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChatBot;
+				TEST_TARGET_NAME = Chatbot1;
 			};
 			name = Debug;
 		};
-		2E3B701A22302D4C001AF27D /* Release */ = {
+		838480A1223032CA00ECA82E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChatBotUITests/Info.plist;
+				DEVELOPMENT_TEAM = TV9ZJ8XFV9;
+				INFOPLIST_FILE = Chatbot1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Digital-First.ChatBotUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = lezioni.IBM.it.Chatbot1UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChatBot;
+				TEST_TARGET_NAME = Chatbot1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E3B6FE522302D4B001AF27D /* Build configuration list for PBXProject "ChatBot" */ = {
+		8384806C223032C800ECA82E /* Build configuration list for PBXProject "Chatbot1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E3B701022302D4B001AF27D /* Debug */,
-				2E3B701122302D4C001AF27D /* Release */,
+				83848097223032CA00ECA82E /* Debug */,
+				83848098223032CA00ECA82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E3B701222302D4C001AF27D /* Build configuration list for PBXNativeTarget "ChatBot" */ = {
+		83848099223032CA00ECA82E /* Build configuration list for PBXNativeTarget "Chatbot1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E3B701322302D4C001AF27D /* Debug */,
-				2E3B701422302D4C001AF27D /* Release */,
+				8384809A223032CA00ECA82E /* Debug */,
+				8384809B223032CA00ECA82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E3B701522302D4C001AF27D /* Build configuration list for PBXNativeTarget "ChatBotTests" */ = {
+		8384809C223032CA00ECA82E /* Build configuration list for PBXNativeTarget "Chatbot1Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E3B701622302D4C001AF27D /* Debug */,
-				2E3B701722302D4C001AF27D /* Release */,
+				8384809D223032CA00ECA82E /* Debug */,
+				8384809E223032CA00ECA82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E3B701822302D4C001AF27D /* Build configuration list for PBXNativeTarget "ChatBotUITests" */ = {
+		8384809F223032CA00ECA82E /* Build configuration list for PBXNativeTarget "Chatbot1UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E3B701922302D4C001AF27D /* Debug */,
-				2E3B701A22302D4C001AF27D /* Release */,
+				838480A0223032CA00ECA82E /* Debug */,
+				838480A1223032CA00ECA82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2E3B6FE222302D4B001AF27D /* Project object */;
+	rootObject = 83848069223032C800ECA82E /* Project object */;
 }
