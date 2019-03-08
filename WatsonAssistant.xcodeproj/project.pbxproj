@@ -112,6 +112,9 @@
 		B31E992F22303A0200B54FD3 /* WatsonAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				B34DA79B2232BA3200E41D77 /* View Controllers */,
+				B34DA79A2232BA2700E41D77 /* Networking */,
+				B34DA7992232B9E700E41D77 /* Views */,
 				B31E993022303A0200B54FD3 /* AppDelegate.swift */,
 				B31E993222303A0200B54FD3 /* ViewController.swift */,
 				B31E993422303A0200B54FD3 /* Main.storyboard */,
@@ -138,6 +141,27 @@
 				B31E995222303A0300B54FD3 /* Info.plist */,
 			);
 			path = WatsonAssistantUITests;
+			sourceTree = "<group>";
+		};
+		B34DA7992232B9E700E41D77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B34DA79A2232BA2700E41D77 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B34DA79B2232BA3200E41D77 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		DA837B7E0F3BB3782AA8FF45 /* Pods */ = {
