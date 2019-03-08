@@ -1,24 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hel-6Z-kUv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Benvenuti nella ChatBot-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatsonAssistant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18d8d4a535ee786b4f9778bfdab1e664" translatesAutoresizingMaskIntoConstraints="NO" id="ifJ-DB-Kzf">
+                                <rect key="frame" x="50" y="114" width="275" height="400"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSs-xt-8g9">
+                                <rect key="frame" x="29" y="564" width="326" height="83"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
+                                <state key="normal" title="Inizia la conversazione"/>
+                                <connections>
+                                    <segue destination="rHn-rJ-nWw" kind="show" id="drr-RL-aNp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZSs-xt-8g9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="9gI-Ip-HDN"/>
+                            <constraint firstItem="ifJ-DB-Kzf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Bsx-qA-edn"/>
+                            <constraint firstItem="ifJ-DB-Kzf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Eqs-Sr-a8u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZSs-xt-8g9" secondAttribute="bottom" constant="20" id="Uxf-7X-0DX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ifJ-DB-Kzf" secondAttribute="trailing" constant="50" id="bGT-i0-4Z5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZSs-xt-8g9" secondAttribute="trailing" constant="20" id="cZv-hl-xQc"/>
+                            <constraint firstItem="ZSs-xt-8g9" firstAttribute="top" secondItem="ifJ-DB-Kzf" secondAttribute="bottom" constant="50" id="psz-7c-cnQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Benvenuti nella ChatBot" id="ENO-yq-dSV">
+                        <barButtonItem key="backBarButtonItem" title="back" id="LPh-vp-rYA"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="rHn-rJ-nWw" kind="show" id="buc-bB-fQ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="IaD-9t-tDg">
+            <objects>
+                <tableViewController id="E0M-O1-9HF" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m0h-M4-QKI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="srg-Oc-o52">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="srg-Oc-o52" id="S4j-g7-Iz1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E0M-O1-9HF" id="Z34-C6-9nq"/>
+                            <outlet property="delegate" destination="E0M-O1-9HF" id="U5X-7H-ATS"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="rHn-rJ-nWw" kind="show" id="74J-f9-zbI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEg-WN-JuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="-634"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MYJ-im-TSO">
+            <objects>
+                <viewController id="rHn-rJ-nWw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qav-wM-seO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Hq-dh-Krh">
+                                <rect key="frame" x="5" y="89" width="365" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Scrivi messaggio.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwP-57-8OG">
+                                <rect key="frame" x="5" y="627" width="365" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Hq-dh-Krh" firstAttribute="leading" secondItem="4LA-j1-qNf" secondAttribute="leading" constant="5" id="CSx-A8-BJb"/>
+                            <constraint firstItem="4LA-j1-qNf" firstAttribute="trailing" secondItem="fwP-57-8OG" secondAttribute="trailing" constant="5" id="H3s-c5-NjJ"/>
+                            <constraint firstItem="4LA-j1-qNf" firstAttribute="trailing" secondItem="4Hq-dh-Krh" secondAttribute="trailing" constant="5" id="RSs-i3-1iG"/>
+                            <constraint firstItem="4Hq-dh-Krh" firstAttribute="top" secondItem="4LA-j1-qNf" secondAttribute="top" constant="25" id="S10-uq-rnO"/>
+                            <constraint firstItem="4LA-j1-qNf" firstAttribute="bottom" secondItem="fwP-57-8OG" secondAttribute="bottom" constant="10" id="T64-C0-opi"/>
+                            <constraint firstItem="fwP-57-8OG" firstAttribute="leading" secondItem="4LA-j1-qNf" secondAttribute="leading" constant="5" id="tAV-5z-UQa"/>
+                            <constraint firstItem="fwP-57-8OG" firstAttribute="top" secondItem="4Hq-dh-Krh" secondAttribute="bottom" constant="25" id="zvt-q7-dhP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4LA-j1-qNf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mxb-3T-7bK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="146.17691154422789"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r50-0M-ckZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hel-6Z-kUv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HgV-LW-KPI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ae0-Rb-OIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nou-3F-Bac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="18d8d4a535ee786b4f9778bfdab1e664" width="400" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="drr-RL-aNp"/>
+    </inferredMetricsTieBreakers>
 </document>

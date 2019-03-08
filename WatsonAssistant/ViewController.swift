@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  WatsonAssistant
 //
-//  Created by Nicola Smacchia on 06/03/2019.
-//  Copyright © 2019 Ibm. All rights reserved.
+//  Created by Digital First on 08/03/19.
+//  Copyright © 2019 Digital First. All rights reserved.
 //
 
 import UIKit
