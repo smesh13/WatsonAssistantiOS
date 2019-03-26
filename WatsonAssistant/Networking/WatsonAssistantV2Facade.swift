@@ -10,74 +10,70 @@ import Foundation
 import Alamofire
 
 // variable and constant declarations
-var baseUrl = "https://gateway-lon.watsonplatform.net/assistant/api"
-let user = "apikey"
+let BASE_URL = "https://gateway-lon.watsonplatform.net/assistant/api"
+let USER = "apikey"
+let PASSWORD = "syRUmO5OizoHJM-Ur99kW923Zoz8iK6bE6I7qFyNHt2v"
+let ASSISTANT_ID = "1880bf85-0bcd-4b77-917d-ddb4f3ed8df0"
 
-let assistant_id: String = "1880bf85-0bcd-4b77-917d-ddb4f3ed8df0"
-let password = "syRUmO5OizoHJM-Ur99kW923Zoz8iK6bE6I7qFyNHt2v"
-let version: String = "version=2018-11-08"
+let VERSION = "2018-11-08"
+
 //first composition URL
-let servicePath:String = "v2/assistants/"+assistant_id+"/sessions"
-let url = String(format:"%@/%@?%@", baseUrl,servicePath,version)
-
+let SESSION_API = "v2/assistants/" + ASSISTANT_ID + "/sessions"
 
 
 // class declarations
-class WatsonAssistantV2Facade{
+class WatsonAssistantV2Facade {
     //creation of the method for calling API
-    var session_id:String = ""
-    var rx:String?
-    var rx1:String? = ""
-    var queueB = DispatchQueue.init(label: "it.xcoding.queueB", qos: .background)
     
+    static let shared = WatsonAssistantV2Facade()
     
-    func getOrders(completionHandler: @escaping (String) -> ()) {
-        message("ciao", completionHandler: completionHandler)
+    private var session_id:String
+    
+    private init() {
+        self.session_id = ""
     }
     
-    func message(_ mess:String, completionHandler: @escaping (String) -> ()) -> Void {
+    private func watsonMessage(_ mess:String, completionHandler: @escaping (String) -> ()) {
+        
+        let messageUrl = String(format:"%@/%@?version=%@", BASE_URL, SESSION_API + "/" + self.session_id + "/message", VERSION)
+        
+        Alamofire.request(messageUrl, method: .post, parameters: ["input": ["text": mess]],encoding: JSONEncoding.default, headers: [:])
+            .authenticate(user: USER, password: PASSWORD)
+            .responseJSON { response in
+            
+            let json = response.result.value as! [String:AnyObject]
+            
+            let data = json["output"] as! [String:AnyObject]
+            
+            let text = data["generic"] as! [AnyObject]
+            
+            DispatchQueue.main.async {
+                
+                completionHandler(text[0]["text"] as! String)
+            }
+        }
+    }
+    
+    func message(_ mess:String, completionHandler: @escaping (String) -> ()) {
         
         //first call API
         
-        Alamofire.request(url, method: .post).authenticate(user: user, password: password).responseJSON {response in
-            
-            if let data = response.data {
-                
-                self.session_id = (String(data: data, encoding: .utf8) ?? "")
-                var array=self.session_id.split(separator: ":")
-                var finale=array[1].split(separator: "\"")
-                self.session_id=String(finale[0])
-                
-            }
-            
-            print(self.session_id)
-            let servicePath2="/v2/assistants/"+assistant_id+"/sessions/"+self.session_id+"/message"
-            let url2 = String(format:"%@/%@?%@", baseUrl,servicePath2,version)
-            var msg:String = ""
-            var msg2:String = ""
-            
-            //second call
-            
-            Alamofire.request(url2, method: .post, parameters: ["input": ["text": mess]],encoding: JSONEncoding.default, headers: [:]).authenticate(user: user, password: password).responseJSON { response2 in
-                
-                let json = response2.result.value as! [String:AnyObject]
-                
-                let data = json["output"] as! [String:AnyObject]
-                
-                let text = data["generic"] as! [AnyObject]
-                
-                self.rx1 = text[0]["text"] as? String
-                DispatchQueue.main.async {
-                    //                    print(response2)
-                    print (self.rx1 ?? "valore")
-                    completionHandler(self.rx1 ?? "")
-                }
-            }
+        let sessionUrl = String(format:"%@/%@?version=%@", BASE_URL, SESSION_API, VERSION)
+        
+        if self.session_id.count > 0 {
+            return self.watsonMessage(mess, completionHandler: completionHandler)
         }
         
-        
+        Alamofire.request(sessionUrl, method: .post)
+            .authenticate(user: USER, password: PASSWORD)
+            .responseJSON { response in
+                
+            let json = response.result.value as! [String:AnyObject]
+            self.session_id = json["session_id"] as! String
+            
+            print(self.session_id)
+            self.watsonMessage(mess, completionHandler: completionHandler)
+            
+        }
     }
-    
-    
-    
 }

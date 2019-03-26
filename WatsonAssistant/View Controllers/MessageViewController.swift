@@ -9,22 +9,13 @@
 import UIKit
 
 class MessageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
-   
-    
     
     private var messageList: [String] = [""]
-    private var string: String=""
-    private var i: Int=0
-    
-    
-    
     
     @IBOutlet weak var height: NSLayoutConstraint!
     @IBOutlet weak var send: UIButton!
     @IBOutlet weak var message: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +23,7 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         self.message.delegate=self
         self.tableView.delegate=self
         self.tableView.dataSource=self
-
+        
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.view.layoutIfNeeded()
@@ -58,30 +49,22 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     
-    
     @IBAction func sendMessage(_ sender: Any) {
-        message.resignFirstResponder()
-        string=message.text ?? ""
+        let watson = WatsonAssistantV2Facade.shared
         
-        messageList.insert("UTENTE: " + string, at: i)
-        tableView.insertRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
+        self.message.resignFirstResponder()
         
-        tableView.cellForRow(at: IndexPath(row: i, section: 0))?.textLabel?.textAlignment = NSTextAlignment.right
+        self.messageList.insert("UTENTE: " + self.message.text!, at: self.messageList.count)
+        self.tableView.insertRows(at: [IndexPath(row: self.messageList.count - 1, section: 0)], with: .automatic)
         
+        watson.message(message.text ?? "") { answer in
+            
+            self.messageList.insert("PinoBot:" + answer, at: self.messageList.count)
+            self.tableView.insertRows(at: [IndexPath(row: self.messageList.count - 1, section: 0)], with: .automatic)
+            
+        }
         
-        message.text=""
-        i+=1
-        messageList.insert("PinoBot: risposta", at: i)
-        tableView.insertRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
-        
-        tableView.cellForRow(at: IndexPath(row: i, section: 0))?.textLabel?.textAlignment = NSTextAlignment.left
-        
-        
-        i+=1
-        
-        
-        
-        
+        self.message.text = ""
         
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -93,25 +76,19 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return messageList.count
     }
-   
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        //riempio la cella
-
+        
         cell.textLabel?.text = self.messageList[indexPath.row]
+        
+        if self.messageList[indexPath.row].contains("UTENTE: ") {
+            cell.textLabel?.textAlignment = NSTextAlignment.right
+        }
         
         return cell
     }
     
-   
-    
-    
 }
-
-    
-
-
-
